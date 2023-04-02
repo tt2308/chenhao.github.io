@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<head>
+  <title>SOC學習歷程</title>
+  <meta charset="UTF-8">
+  <style>
+    body{
+      width:100%;
+      margin:0;
+      background-color:bisque;
+    }
+    .top_img{
+      width:100%;
+      vertical-align: bottom;
+    }
+    div.menu {
+      width:100%;
+      background-color: #333;
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+    div.menu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      font-size: larger;
+      width:10%;
+    }
+
+    div.menu a:hover {  
+      background-color: #777;
+    }
+    div.container_left{
+      padding: 2%;
+      background-color: white;
+      margin-left:10% ;
+      width: 60%;
+      float: left;
+      border-radius: 5%;
+    }
+    div.container_left h2{
+      margin-left:3%
+    }
+    div.container_left p{
+      margin-left:6%
+    }
+    div.containerh_rigt{
+      background-color: white;
+      margin-left:5% ;
+      width: 20%;
+      float: left;
+      border-radius: 5%;
+    }
+    div.containerh_rigt a{
+      color: blue;
+      text-decoration:none;
+    }
+    div.containerh_rigt ul{
+      list-style-type:none;
+      padding-left: 0%;
+      font-size: larger;
+    }
+    div.containerh_rigt li{
+      padding-top: 5%;
+    }
+  </style>
+</head>
+
+<body>
+    <div>
+      <img class="top_img" src="./image/image1.jpg" alt="首頁圖片">
+    </div>
+    <div class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./index.html">VLSI</a>
+      <a href="#contact">AIC</a>
+      <a href="#about">ADIC</a>
+      <a href="#about">ASIC</a>
+      <a style="float:right;" href="#about">Reference</a>
+    </div>
+    <div style="width: 100%; margin-top: 2%;">
+      <div class="container_left">
+        <h1>電機系SOC組簡介</h1>
+        <div style="width: 100%;float: left;">
+          <h2>什麼是SOC?</h2>
+        </div>
+        <div style="width: 100%;float: left;">
+          <img style="width:60%;margin-left: 10%;"  src="./image/soc.jpeg" alt="soc">
+        </div>
+        <div style="width: 100%;float: left;">
+          <p>SOC指的是System on a chip，意即將整個系統整合在同一個晶片上，以減少晶片的體積、功耗、成本並提升電路的性能。</p>
+        </div>
+        <h2>SOC組在幹嘛?</h2>
+        <div style="width: 80%; margin-left:10% ;">
+          <div style="width: 33%; float: left;">
+            <img style="width:100%;"  src="./image/circuit.png" alt="circuit">
+          </div>
+          <div style="width: 33%; float: left;">
+            <img style="width:100%;"  src="./image/layout.png" alt="ic">
+          </div>
+          <div style="width: 33%;float: left;">
+            <img style="width:100%;"  src="./image/ic.jpg" alt="ic">
+          </div>
+        </div>
+        <div style="width: 100%;float: left;">
+          <p>中正大學的SOC組主要著重在IC設計這方面，而IC設計又可粗略分為Digital IC、Analog IC 及Mixed signal IC的設計等。簡單地來說，我們的任務就是利用晶圓廠提供的電路元件模型，設計出特定的電路架構，以實現特定的功能。</p>
+        </div>
+        <div style="width: 100%;float: left;">
+          <h2>設計IC需要哪方面的知識?</h2>
+        </div>
+        <div style="width: 80%; margin-left:10% ;">
+          <div style="width: 50%; float: left;">
+            <img style="width:93%;"  src="./image/RTL.png" alt="circuit">
+          </div>
+          <div style="width: 50%; float: left;">
+            <img style="width:100%;"  src="./image/spice.png" alt="ic">
+          </div>
+        </div>
+        <div style="width: 100%;float: left;">
+          <p>設計IC基本需要用到:電子學、電路學、邏輯設計、超大型積體電路、數位系統設計、計算機組織、計算機結構等方面的知識，但這些僅是最基本的。設計的IC種類不同，需要具備相關領域的知識也不同。此外，雖然我們是設計硬體，但我們也需要具備Coding的能力，因為我們是用Coding的方式將硬體給設計出來的!!!</p>
+        </div>
+      </div>
+      <div class="containerh_rigt">
+        <div style="text-align: center;">
+          <h1 style="font-size: 28px;">網站推薦</h1>
+          <ul>
+            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE Xplore</a></li>
+            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站2</a></li>
+            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站3</a></li>
+            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站4</a></li>
+            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站5</a></li>
+            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站6</a></li>
+            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站7</a></li>
+            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站8</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer><div style="float: left; width: 100%;"><br><br><br> </div></footer>
+</body>
+

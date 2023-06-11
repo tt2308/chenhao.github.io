@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <title>SOC學習歷程</title>
   <meta charset="UTF-8">
   <style>
@@ -75,11 +76,10 @@
     </div>
     <div class="menu">
       <a href="./index.html">Home</a>
-      <a href="./index.html">VLSI</a>
-      <a href="#contact">AIC</a>
-      <a href="#about">ADIC</a>
-      <a href="#about">ASIC</a>
-      <a style="float:right;" href="#about">Reference</a>
+      <a href="./VLSI.html">VLSI</a>
+      <a href="./AIC.html">AIC</a>
+      <a href="./ADIC.html">ADIC</a>
+      <a href="./ASIC.html">ASIC</a>
     </div>
     <div style="width: 100%; margin-top: 2%;">
       <div class="container_left">
@@ -94,17 +94,21 @@
           <p>SOC指的是System on a chip，意即將整個系統整合在同一個晶片上，以減少晶片的體積、功耗、成本並提升電路的性能。</p>
         </div>
         <h2>SOC組在幹嘛?</h2>
-        <div style="width: 80%; margin-left:10% ;">
-          <div style="width: 33%; float: left;">
-            <img style="width:100%;"  src="./image/circuit.png" alt="circuit">
-          </div>
-          <div style="width: 33%; float: left;">
-            <img style="width:100%;"  src="./image/layout.png" alt="ic">
-          </div>
-          <div style="width: 33%;float: left;">
-            <img style="width:100%;"  src="./image/ic.jpg" alt="ic">
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000"  style="width: 50%; margin-left:25% ;">
+               <img src="./image/re_circuit.png" class="d-block w-100" alt="circuit" >
+            </div>
+            <div class="carousel-item" data-bs-interval="1000" style="width: 50%;  margin-left:25% ;">
+              <img src="./image/re_layout.png" class="d-block w-100" alt="layout" >
+            </div>
+            <div class="carousel-item" data-bs-interval="1000" style="width: 50%;  margin-left:25% ;">
+              <img  src="./image/re_ic.png" class="d-block w-100" alt="ic" >
+            </div>
           </div>
         </div>
+      
         <div style="width: 100%;float: left;">
           <p>中正大學的SOC組主要著重在IC設計這方面，而IC設計又可粗略分為Digital IC、Analog IC 及Mixed signal IC的設計等。簡單地來說，我們的任務就是利用晶圓廠提供的電路元件模型，設計出特定的電路架構，以實現特定的功能。</p>
         </div>
@@ -124,21 +128,22 @@
         </div>
       </div>
       <div class="containerh_rigt">
-        <div style="text-align: center;">
-          <h1 style="font-size: 28px;">網站推薦</h1>
-          <ul>
-            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE Xplore</a></li>
-            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站2</a></li>
-            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站3</a></li>
-            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站4</a></li>
-            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站5</a></li>
-            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站6</a></li>
-            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站7</a></li>
-            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">推薦網站8</a></li>
+        <div style="text-align: center; color: #333;">
+          <ul class="list-group">
+            <li class="list-group-item"><h1 style="font-size: 28px;">網站推薦</h1></li>
+            <li class="list-group-item"><a style="color: #333;" href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE Xplore</a></li>
+            <li class="list-group-item"><a style="color: #333;" href="https://www.tsri.org.tw/main.jsp">TSRI</a></li>
+            <li class="list-group-item"><a style="color: #333;" href="https://webinars.synopsys.com.tw/icworkshop">Synopsys</a></li>
+            <li class="list-group-item"><a style="color: #333;" href="https://www.cadence.com/en_US/home.html">Cadence</a></li>
+            <li class="list-group-item"><a style="color: #333;" href="https://www.umc.com/zh-TW/Home/Index">UMC</a></li>
+            <li class="list-group-item"><a style="color: #333;" href="https://www.tsmc.com/chinese">TSMC</a></li>
+            <li class="list-group-item"><a style="color: #333;" href="https://www.ccu.edu.tw/">國立中正大學</a></li>
+            <li class="list-group-item"><a style="color: #333;" href="https://ee.ccu.edu.tw/">國立中正大學 電機工程學系</a></li>
           </ul>
         </div>
       </div>
     </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <footer><div style="float: left; width: 100%;"><br><br><br> </div></footer>
 </body>
 
